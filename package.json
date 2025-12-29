@@ -12,6 +12,7 @@
     "build": "tsc"
   },
   "dependencies": {
+    "base62": "^2.0.2",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "joi": "^18.0.2",
