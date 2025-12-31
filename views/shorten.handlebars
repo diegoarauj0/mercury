@@ -1,0 +1,45 @@
+<main>
+  {{#if shortURL}}
+  <section class="copy">
+    <header class="header">
+      <div class="logo-container"><img alt="logo" class="logo" src="/public/images/logo.png"></div>
+      <a href="/"><h1 class="bbh-bogle-regular">Mercury</h1></a>
+    </header>
+    <input id="url" class="url copy" type="url" value="http://{{host}}/r/{{shortURL.code}}" readonly>
+    <button class="copy">Copiar URL</button>
+  </section>
+  {{else}}
+  <section class="shorten">
+    <header class="header">
+      <div class="logo-container"><img alt="logo" class="logo" src="/public/images/logo.png"></div>
+      <a href="/"><h1 class="bbh-bogle-regular">Mercury</h1></a>
+    </header>
+    <div class="form-container">
+      <form method="post" class="form" autocomplete="off" action="/">
+        <input id="url" class="url" placeholder="Cole sua URL aqui :D" type="url" name="URL" required minlength="1">
+        <button type="submit" class="submit" disabled>Encurtar URL</button>
+      </form>
+    </div>
+  </section>
+  {{/if}}
+</main>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="/public/js/script.js"></script>
+{{#if error}}
+<script>
+  Toastify({
+    text: `{{error}}`,
+    duration: 3000,
+    newWindow: true,
+    close: true,
+    gravity: "top",
+    position: "right",
+    avatar: "/public/images/error.png",
+    stopOnFocus: true,
+    style: {
+      background: "#2C0B0E",
+      color: "#D87A83"
+    },
+  }).showToast();
+</script>
+{{/if}}
