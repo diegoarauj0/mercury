@@ -1,4 +1,4 @@
-import type { ShortURLEntity } from "@/domain/entities/shortURL.entity.js";
+import type { ShortURLEntity } from "../../../domain/entities/shortURL.entity.js";
 
 export interface URLShortenerRepositoryContract {
 	save(shortURLEntity: ShortURLEntity): Promise<ShortURLEntity>;

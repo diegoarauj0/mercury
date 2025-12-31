@@ -1,4 +1,4 @@
-import { env } from "@/env.js";
+import { env } from "../env.js";
 import mongoose from "mongoose";
 
 export async function connectMongoose(): Promise<void> {

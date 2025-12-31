@@ -1,4 +1,4 @@
-import type { ShortenUseCaseContract } from "@/app/contracts/useCases/shorten.useCase.contract.js";
+import type { ShortenUseCaseContract } from "../app/contracts/useCases/shorten.useCase.contract.js";
 import type { Request, Response } from "express";
 import { inject, injectable } from "tsyringe";
 import Joi from "joi";

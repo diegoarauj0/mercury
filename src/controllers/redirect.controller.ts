@@ -1,4 +1,4 @@
-import type { URLShortenerRepositoryContract } from "@/app/contracts/repositories/URLShortener.repository.contract.js";
+import type { URLShortenerRepositoryContract } from "../app/contracts/repositories/URLShortener.repository.contract.js";
 import type { Request, Response } from "express";
 import { inject, injectable } from "tsyringe";
 

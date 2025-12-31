@@ -1,5 +1,5 @@
 import type { URLShortenerRepositoryContract } from "../contracts/repositories/URLShortener.repository.contract.js";
-import type { ShortURLEntity } from "@/domain/entities/shortURL.entity.js";
+import type { ShortURLEntity } from "../../domain/entities/shortURL.entity.js";
 import { shortURLMapper } from "../../persistence/mappers/shortURL.mapper.js";
 import { shortURLModel } from "../../persistence/models/shortURL.model.js";
 import { injectable } from "tsyringe";

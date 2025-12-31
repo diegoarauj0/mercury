@@ -1,0 +1,17 @@
+services:
+ mongodb:
+  image: mongodb/mongodb-community-server
+  container_name: mongodb
+  ports:
+   - "27017:27017"
+ app:
+  container_name: mercury-app
+  environment:
+    - MONGODB=mongodb://mongodb/mercury
+  build:
+    context: .
+    dockerfile: dockerfile
+  depends_on:
+   - mongodb
+  ports:
+   - "3000:3000"

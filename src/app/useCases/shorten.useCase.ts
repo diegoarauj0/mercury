@@ -1,8 +1,8 @@
 import type { URLShortenerRepositoryContract } from "../contracts/repositories/URLShortener.repository.contract.js";
 import type { ShortenUseCaseContract } from "../contracts/useCases/shorten.useCase.contract.js";
-import { ShortURLEntity } from "@/domain/entities/shortURL.entity.js";
+import { ShortURLEntity } from "../../domain/entities/shortURL.entity.js";
 import { inject, injectable } from "tsyringe";
-import { env } from "@/env.js";
+import { env } from "../../env.js";
 import base62 from "base62";
 
 @injectable()
