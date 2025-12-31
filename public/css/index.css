@@ -1,0 +1,166 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #212121;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bbh-bogle-regular {
+	font-family: "BBH Bogle", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+header.header {
+	display: flex;
+	height: 70px;
+	align-items: center;
+}
+
+header.header > a {
+	text-decoration: none;
+}
+
+header.header h1 {
+	color: #a95fe8;
+	font-size: 3rem;
+}
+
+header.header > .logo-container {
+	height: 60px;
+	margin-right: 5px;
+}
+
+header.header > .logo-container > .logo {
+	height: 100%;
+}
+
+section.shorten {
+	max-width: 600px;
+	width: 100%;
+}
+
+input.copy {
+	background-color: #323232;
+	outline: transparent;
+	border: transparent;
+	padding: 15px;
+	color: #a95fe8;
+	font-weight: 800;
+	width: 100%;
+	font-size: 1rem;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+button.copy {
+	transition: 0.3s;
+	background-color: #a95fe8;
+	border: transparent;
+	outline: transparent;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	font-weight: 600;
+	border-radius: 10px;
+	width: 100%;
+}
+
+button.copy:hover {
+	transition: 0.1s;
+	transform: scale(1.03);
+}
+
+input.url {
+	background-color: #323232;
+	outline: transparent;
+	border: transparent;
+	padding: 15px;
+	color: #acacac;
+	font-weight: 600;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+button.submit {
+	transition: 0.3s;
+	background-color: #a95fe8;
+	border: transparent;
+	outline: transparent;
+	color: white;
+	padding: 10px;
+	cursor: not-allowed;
+	font-weight: 600;
+	border-radius: 10px;
+	filter: opacity(50%);
+	width: 100%;
+}
+
+button.submit.valid {
+	filter: opacity(100%);
+	cursor: pointer;
+}
+
+button.submit.valid:hover {
+	transition: 0.1s;
+	transform: scale(1.03);
+}
+
+.toastify {
+	box-shadow: none;
+}
+
+main.redirect {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	color: white;
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+main.redirect h1 {
+	font-size: 120px;
+	margin: 0;
+	font-weight: bold;
+}
+
+main.redirect p {
+	font-size: 24px;
+	margin: 20px 0;
+}
+
+main.redirect a {
+	transition: 0.2s;
+	display: inline-block;
+	margin-top: 20px;
+	padding: 12px 30px;
+	background-color: #a95fe8;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+main.redirect a:hover {
+	transition: 0.4;
+	transform: scale(1.03);
+}
